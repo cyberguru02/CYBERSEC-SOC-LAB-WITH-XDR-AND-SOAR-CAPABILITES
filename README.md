@@ -233,10 +233,13 @@ sudo apt install wget
 
 sudo apt update
 
+
 ​​
 Once on this main CLI screen:
 
  ![image](https://github.com/user-attachments/assets/ef986d01-feb3-4d7c-8121-c2670f1dd4bc)
+
+
 
 
 Run the following commands to completely install Java:
@@ -262,6 +265,7 @@ echo JAVA_HOME="/usr/lib/jvm/java-11-amazon-corretto" | sudo tee -a /etc/environ
 export JAVA_HOME="/usr/lib/jvm/java-11-amazon-corretto"
 
 
+
  
 
 Installing Casandra:
@@ -277,6 +281,8 @@ wget -qO - https://downloads.apache.org/cassandra/KEYS | sudo gpg --dearmor -o /
 ​
 
 echo "deb [signed-by=/usr/share/keyrings/cassandra-archive.gpg] https://debian.cassandra.apache.org 40x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+
+
 
  
 
@@ -296,9 +302,12 @@ echo "deb [signed-by=/usr/share/keyrings/elasticsearch-keyring.gpg] https://arti
 
 ​
 
+
+
 Installing The hive: 
 
       Run the following commands to completely install The Hive
+
 
 ​
 
@@ -319,10 +328,14 @@ After completely installing the necessary components, The Hive is now accessible
 Congratulations, you have  now successfully installed The Hive!
 
 
+
+
 Initial Configuration of The Hive
 
 
 After installing The Hive and its components such as Cassandra and Elasticsearch, the first step is to configure these components effectively. Then I configured The Hive by modifying the necessary files to link it to the IP address of the VM hosting The Hive. This included updating the listen_address, rpc_address, seed provider, cluster name, network host, HTTP port, and other settings.
+
+
 
 
 Configuring Cassandra
